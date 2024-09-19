@@ -2,18 +2,26 @@
 
 public class Create
 {
-    public class Command : ICommand<string>
+    public class Command : ICommand
     {
         public int Id { get; set; }
-        public required string Name { get; set; }
-
+        public required string Url { get; set; }
     }
 
-    public class Handler : ICommandHandler<Create.Command, string>
+    public class Handler(Db.BloggingContext context) : ICommandHandler<Command>
     {
-        public Task<string> ExecuteAsync(Command command, CancellationToken ct)
+        private readonly Db.BloggingContext context = context;
+
+        public Task ExecuteAsync(Command command, CancellationToken ct)
         {
-            return Task.FromResult($"create blog success");
+            var blog1 = new Db.Blog()
+            {
+                BlogId = command.Id,
+                Url = command.Url
+            };
+            context.Blogs.Add(blog1);
+            context.SaveChanges();
+            return Task.CompletedTask;
         }
     }
 }

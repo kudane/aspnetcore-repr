@@ -3,25 +3,31 @@
     "ContainingType": "FastEndpoints.MainExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CMapFastEndpoints\u003Eb__2_0",
     "RelativePath": "blog/create",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "Request",
+        "Type": "Application.Feature.Blog.Create\u002BRequest",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "Application.Feature.Blog.Create.Response",
+        "Type": "Application.Infrastructure.Persistence.Blog",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
     ],
-    "EndpointName": "ApplicationFeatureBlogCreateEndpoint"
+    "EndpointName": "ApplicationFeatureBlogCreate\u002BEndpoint"
   },
   {
     "ContainingType": "FastEndpoints.MainExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CMapFastEndpoints\u003Eb__2_0",
-    "RelativePath": "blog/{id}/z",
+    "RelativePath": "blog/{id}",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -34,7 +40,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.Feature.Blog.GetById\u002BResponse",
+        "Type": "Application.Infrastructure.Persistence.Blog",
         "MediaTypes": [
           "application/json"
         ],

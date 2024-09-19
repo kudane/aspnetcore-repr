@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\REPR\\Application\\Application.csproj": {}
+    "D:\\Github\\aspnetcore-repr\\Application\\Application.csproj": {}
   },
   "projects": {
-    "D:\\Github\\REPR\\Application\\Application.csproj": {
+    "D:\\Github\\aspnetcore-repr\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\REPR\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Github\\aspnetcore-repr\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Github\\REPR\\Application\\Application.csproj",
+        "projectPath": "D:\\Github\\aspnetcore-repr\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\krais\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\REPR\\Application\\obj\\",
+        "outputPath": "D:\\Github\\aspnetcore-repr\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\krais\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,6 +55,20 @@
               "version": "[5.29.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
             },
