@@ -48,5 +48,30 @@
       }
     ],
     "EndpointName": "ApplicationFeatureBlogGetById\u002BEndpoint"
+  },
+  {
+    "ContainingType": "FastEndpoints.MainExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapFastEndpoints\u003Eb__2_0",
+    "RelativePath": "blog/update",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Request",
+        "Type": "Application.Feature.Blog.Update\u002BRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Infrastructure.Persistence.Blog",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ApplicationFeatureBlogUpdate\u002BEndpoint"
   }
 ]
